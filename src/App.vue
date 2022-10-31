@@ -1,16 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img class="imagen" alt="imagen" src="./assets/hands-2178566_1920.jpg">
+    <img class="logo" src="./assets/logo-sanmateo.png" alt="logo">
+    <Principal msg="Welcome to Your Vue.js App"/>
+    <Definition msg="" />
+    <FichaTecnica/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Principal from './components/Principal'
+import Definition from './components/Definition.vue'
+import FichaTecnica from './components/fichaTecnica.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Principal,
+    Definition,
+    FichaTecnica
+}
 }
 </script>
 
